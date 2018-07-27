@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeEngine</title>
+	 <meta charset="utf-8">
+       
+        <title>First Page CodeGen</title>
+       
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/CodeEngine.css">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+ 
+  
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton|Oxygen|Cabin" rel="stylesheet">
+  <link rel="stylesheet" href="css/styleparticles.css">
+  
+  <style type="text/css">                                        <!--internal styling for the 1stpage navigation-->
+  	
+  #mynav {
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 0px;
+
+ 
+}
+#mynav ul {
+  list-style: none;
+  text-align: right;
+}
+#mynav ul li {
+  display: inline-block;
+   style="font-size: 17px; 
+   font-style: 'Monoton',cursive;"
+}
+#mynav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+}
+#mynav ul li a,
+#mynav ul li a:after,
+#mynav ul li a:before {
+  transition: all .5s;
+}
+#mynav ul li a:hover {
+  color: #FF4500;
+}
+
+
+/* stroke */
+#mynav.stroke ul li a
+{
+  position: relative;
+}
+#mynav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+#mynav.stroke ul li a:hover:after {
+  width: 100%;
+}
+  
+  .page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    position: relative;
+}
+ #about{
+  padding: 0px;
+ }   
+#sample{
+  color: blue;
+}
+#codeoutput{
+  padding-top:250px;
+}
+.heading{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: helvetica;
+  border-color: white;
+}
+#opbody{
+    overflow-y: scroll;
+    height:360px;
+    max-height: 500px; 
+    margin-top:-200px;
+    background-color: #EAECEE;
+    border-radius: 5px;
+    border-style: solid;
+    border-left-color:  #1B2631;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+#codewindow{
+   
+    overflow-y: scroll;
+    height:360px; 
+    max-width: 100%;
+    overflow-x: hidden;
+    max-height: 500px;
+    margin-top:-200px;
+    background-color: #EAECEE; 
+    border-radius: 4px;
+    border-style: solid;
+    border-right-color:   #1B2631;
+    font-size: 15px;
+    margin-bottom: 200px;   
+    }
+ .prettyprint ol.linenums li { list-style-type: decimal; }
+ ol.linenums{
+  padding-left: 0px;
+ }
+#code{
+text-align: left;padding-top: 30px;padding-left: 0px;color: black;max-height: 360;
+}
+.card{
+   color: white;
+   height: 30px; 
+   background-color:black;
+}
+.card-body{
+  style="font-size: 20px;
+  font-weight: bold;
+  "
+}
+
+
+textarea{
+  font-weight: 500;
+  font-size: 100px;
+  color:black;
+  font-family: 'Oxygen',sans-serif;
+}
+body{
+  max-height: 800px;
+/*background: -webkit-linear-gradient(-180deg, rgb(3, 2, 9), rgb(15, 15, 42));
+background: linear-gradient(-180deg, rgb(3, 2, 9), rgb(15, 15, 42));*/
+background-color: #17182f;
+
+}
+
+Highlight Code
+.logo{
+  padding-top: 40px;
+  padding-left: 60px;
+
+}
+section{
+padding-top: 8px;height: 1220px;max-height: 1170px;
+}
+/*---------------------------------------NEW CSS FOR BACKGROUND--*/
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  
+  height: 100vmax !important;
+}
+#particles canvas{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+
+</style>
+
+</head>
+
+
+
+
+
+<body>
+ <div id="particles-js"></div>
+  <section>
+    <div class="container">                                          
+        <div class="row" >
+          
+<div class="col-xs-12 col-md-12" style="padding-right: 0px;">
+          <nav class="stroke" id="mynav">
+			   <ul>
+			      <li><a href="#">HOME</a></li>
+			      <li><a href="CodeEngFeatures.html">FEATURES</a></li>
+			      <li><a href="AboutCodegen.html">ABOUT</a></li>
+			    
+			   </ul>
+         </nav>
+</div>     
+        <div class=" logo col-md-12 col-xs-12 text-center"> 
+          <div class="row">
+         <img class="image-responsive" src="img/codeengine.png">
+       </div>
+       </div>
+				
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="margin-top: 30px;">
+               
+                   
+                           
+                   <div class="col-sm-8 col-sm-offset-2" style="padding-left: 50px;">
+                            
+                      <div id="queryid" class="form-group speech col-centered" style="position: relative;">                               
+                       <textarea class="form-control text-left" rows="7" placeholder="Enter query" id="query" name="que" 
+                       style=" font-weight: 500;
+                               font-size: 16px;
+                              color:black;
+                              font-family: 'Oxygen',sans-serif;" ></textarea>
+
+                       <!-- <img style="float: right; width: 50px;margin-top: -50px;position: relative;"     onclick="startDictation()" src="../CodeGen/img/microphone.gif" />  -->
+
+
+                       <div class="col-lg-12 text-left" style="margin-top: 10px;margin-left:2px ;">
+                          <div class="col-xs-12 wow fadeInUp text-center" data-wow-delay="0.5s" >
+                            <a class="btn btn-primary btn-lg " onclick='myfun()' id='getresult' style="background-color: #FF4500;">Get Result</a>
+                         </div>    
+                      </div>      
+                   </div>
+           
+</div>
+</div>
+<div class="text-center" id="codeoutput">
+ 
+ <div class=" col-md-6 "  id="codewindow"> <!--display:none;-->       
+       <div class="card">
+             <div class="card-body" >CODE</div>
+        </div>  
+     
+        <div id="code">
+               <!--The output will go here-->
+      <pre class="prettyprint linenums" id="pretty">Your code will be displayed here</pre>
+        </div>   
+      </div>
+
+      <div class="col-md-6  text-center" id="opbody">
+         
+          <div class="card">
+             <div class="card-body" >OUTPUT</div>
+        </div>  
+            <div id="output" style="text-align: center;padding-top: 30px;color: black;">
+     Your output will be displayed here
+               <!--The output will go here-->  
+      
+           </div>
+     
+     </div>
+           
+</div>   <!--jumbotron containing query and code-->
+</div>
+</div>
+         <!--runcloud-app closing div-->
+
+</section> 
+
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>  
+<script src="particles.js"></script>
+<script src="particles.min.js"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=default"></script>
+
+
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+     
+     <script src="js/bootstrap.min.js"></script>
+   
+    <script src="js/modernizr-2.7.1.js"></script>
+    <script src="js/wow.min.js"></script> 
+    <script src="js/nlpjs.js"></script>                  
+  
+    <script type="text/javascript">
+   
+ $(document).ready(function(){
+  wow = new WOW(
+        {
+          boxClass:     'wow',     
+          animateClass: 'animated',
+          offset:       0,          
+          mobile:       false     
+        }
+      );
+      wow.init();
+
+
+  
+});
+/*--------------------------------------------------------------------                                     
+         function startDictation() {                                            speech recog
+
+      if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+          var recognition = new webkitSpeechRecognition();
+
+          recognition.continuous = false;
+          recognition.interimResults = false;
+
+          recognition.lang = "en-US";
+       // recognition.lang = "hi-In";
+          recognition.start();
+
+          recognition.onresult = function(e) 
+          {
+              document.getElementById('query').value= e.results[0][0].transcript;
+              recognition.stop();
+              document.getElementById('labnol').submit();
+          }
+
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+
+      }
+      
+  }
+/*----------------------------------------------------------------*/
+$(document).ready(function() {                                       
+    $("#getresult").click(function(event){
+        $('html, body').animate({scrollTop: '+370px'}, 800);          /*scroll by 150px each time : +=395 px.*/
+    });
+});
+/*----------------------------------------------------------------*/
+function myfun()                                                     /*nlptestjs.js*/
+{
+  var q=document.getElementById('query').value;
+  document.getElementById('pretty').innerHTML="Loading...";
+  document.getElementById('output').innerHTML="Loading...";
+  $.ajax({
+      type:'POST',
+      url:'http://therapybotvm.southeastasia.cloudapp.azure.com:8080/receiver',
+      data: {que:q},
+    dataType: 'json',
+    context: document.body,
+    global: false,
+    async:true,
+    success: function(data2) {
+    data2["code"] = data2["code"].replace(/\n/g, "<br />");  
+    data2["code"] = data2["code"].replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;");  
+      document.getElementById('output').innerHTML=data2["output"];
+    document.getElementById('pretty').innerHTML=data2["code"];
+      },
+      error: function(request, status, error) {
+        document.getElementById('disp').innerHTML="error"+error;
+      }
+   });  
+}
+
+particlesJS("particles-js", {
+  "particles": {
+    "number": {
+      "value": 455,
+      "density": {
+        "enable": true,
+        "value_area": 789.1476416322727
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 0.68927153781200905,
+      "random": false,
+      "anim": {
+        "enable": true,
+        "speed": 0.8,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 2,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 2,
+        "size_min": 0,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 1000,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 83.91608391608392,
+        "size": 2,
+        "duration": 3,
+        "opacity": 4,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 10
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first page</title>
+	 <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="turbolinks-cache-control" content="no-cache">
+        <title>First Page CodeGen</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css,npm/highlight.js@9.12.0/styles/monokai-sublime.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cf1.cdn.runcloud.io/css/app.css?id=8808b44122151e182a66">   <!--all 3 important links for firstpage-->
+
+
+<!--links for mainpage-->
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!--creative.html's stylesheets-->
+  <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+  <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+  <!-- Magnific Popup -->
+  <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <style type="text/css">                                        <!--internal styling for the 1stpage navigation-->
+  	
+  #mynav {
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 0px;
+
+ 
+}
+#mynav ul {
+  list-style: none;
+  text-align: right;
+}
+#mynav ul li {
+  display: inline-block;
+}
+#mynav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+}
+#mynav ul li a,
+#mynav ul li a:after,
+#mynav ul li a:before {
+  transition: all .5s;
+}
+#mynav ul li a:hover {
+  color: yellow;
+}
+
+
+/* stroke */
+#mynav.stroke ul li a
+{
+  position: relative;
+}
+#mynav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+#mynav.stroke ul li a:hover:after {
+  width: 100%;
+}
+  
+  .page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    position: relative;
+}
+ #about{
+  padding: 0px;
+ }   
+#sample{
+  color: blue;
+}
+
+#howto{
+  height: 1500px;
+  margin-bottom: 0;
+  background-image: url(img/daysky.jpg);
+  background-size: cover;
+  background-size: 1500px 2000px;
+  background-repeat: no-repeat;
+}
+/*.rc-section{
+  background-color: #154360  ;
+  
+  height: 700px;
+}*/
+
+</style>
+
+</head>
+
+
+
+
+
+<body>
+            
+   <div id="runcloud-app">         
+  <section class="rc-section rc-hero" style="padding-top: 20px;height: 680px;max-height: 680px;">
+
+    <div class="rc-stars-1" v-cloak></div>
+    <div class="rc-stars-2" v-cloak></div>
+    <div class="rc-stars-3" v-cloak></div>
+  <!--  <div class="rc-planet" v-cloak></div>       <!--mars planet image-->
+    
+    <div class="container">                                          
+        <div class="row" >
+        	 <div class="col-xs-6">
+           <!--<a href="index.html"><img src="img/logo.svg" alt="Logo"></a>                   Insert Logo Here-->       
+          </div>
+          
+ 
+ <!--<div class="col-xs-6 signin text-right navbar-nav" style="padding-right: 0px;">                      //original plain navbar through a links
+          <a href="#">Home</a>&nbsp; &nbsp; &nbsp;<a href="#">Get Started</a>&nbsp; &nbsp;&nbsp;              
+          <a href="#">Help</a>&nbsp; &nbsp; &nbsp;<a href="login.html">Contact</a>&nbsp; &nbsp;&nbsp;
+          <a href="CodeGenSingup.html">SignUp</a>&nbsp; &nbsp; &nbsp;<a href="CodeGenLogin.html">Login</a>
+     </div>    -->
+          
+<div class="col-xs-12" style="padding-right: 0px;">
+          <nav class="stroke" id="mynav">
+			   <ul>
+			      <li><a href="#about">ABOUT</a></li>
+			      <li><a href="#features">FEATURES</a></li>
+			      <li><a href="#howto">HOW TO</a></li>
+			      <li><a href="#contact">CONTACT</a></li>
+			    
+			   </ul>
+         </nav>
+</div>     
+    
+         
+				
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="margin-top: 320px;">
+               
+                   
+                           
+                   <div class="col-sm-8 col-sm-offset-2" style="padding-left: 50px;">
+                            
+                            <div id="queryid" class="form-group speech col-centered" style="position: relative;">                                  <!--  speech class for VR-->
+                       <!-- <input id="query" style="position: relative;" type="text" name="name" class="form-control"  placeholder="Enter query" style="width:90%;" />-->
+                       <textarea class="form-control" rows="7" id="query" placeholder="Enter query"></textarea>
+                        <img style="float: right; width: 50px;margin-top: -50px;position: relative;"     onclick="startDictation()" src="../CodeGen/img/microphone.gif" />
+
+                             </div>
+                        <br>
+                            
+
+                 
+                           
+                    
+  
+                    <!-- <div class="col-xs-12 wow fadeInUp text-center" data-wow-delay="0.8s">
+                    <a href="#be-the-first" class="btn btn-primary btn-lg scroll" onclick='getresult()' id='downClick' style="background-color: #F1C40F;">Get Result</a>
+                   </div>-->
+                   
+  <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                <div class="row">
+                  <div class="col-xs-6 text-right wow fadeInUp" data-wow-delay="0.6s">
+                   <a href="#be-the-first" class="btn btn-secondary btn-lg scroll" onclick='getresult()' id='downClick' style="background-color: #F1C40F;">Get Result</a>
+                        
+                  </div>
+                 <div class="col-xs-6 text-left wow fadeInUp" data-wow-delay="1s">
+                    <a  href="be-the-first" class="btn btn-primary btn-lg scroll" onclick='getresult()' id='downClick' style="background-color: #F1C40F;">Get Code</a>
+                  </div>
+                </div><!--End Button Row-->  
+              </div>
+            </div>
+</div>
+                   
+
+            </div>
+        </div>
+        
+        </div>
+  <!--  <div class="rc-cloud"></div>                          for the cloud images-->
+</section> 
+
+
+ <div class="jumbotron  pad-xl" id="be-the-first">
+    
+    <div class="container-fluid">
+      <div class="row">
+    
+    
+     <div class="jumbotron col-md-6 bg-light "  id="codewindow" 
+     style="overflow-y: scroll;height:500px; max-height: 500px;margin-top:-190px;"> <!--display:none;-->
+
+        <div class="card" style="color: white;height: 30px; background-color:#A9CCE3" >
+             <div class="card-body" style="font-size: 20px;font-weight: bold;">CODE</div>
+        </div>   
+        <div id="code" style="text-align: left;padding-top: 4px;color: black;"></div>   
+     </div>
+           <p id="disp" style="float: right;"></p>
+       
+         <!--  <button class="btn btn-info btn-lg" onclick="toggle_div('codewindow')">Code</button>   to make div disappear-->
+          <!--<p id="disp" style="float: right;"></p>
+          <button class="btn btn-danger text-center" onclick="toggle_div('code')">Show Code </button>-->
+          
+
+     <div class="jumbotron col-md-6  bg-light" 
+          style="overflow-y: scroll;height:500px;max-height: 500px;margin-bottom:20px; margin-top:-190px;">
+            
+            <div class="card "             style="color: white;height: 30px; background-color:#A9CCE3">
+              <div class="card-body"     style="font-size: 20px;font-weight: bold;">OUTPUT</div>
+           </div>
+       
+      <div id="output"           style="text-align: center;padding-top: 4px;color: black;"></div>
+     </div>
+    
+
+
+  <div id="queryid" class="form-group col-md-5 speech col-centered " style="position: relative;margin-left: 350px;">                                    <!--speech class for VR-->
+   
+      <input id="copyquery" class="form-control" style="position: relative;" 
+             type="text" name="name" placeholder="Enter query" />
+     
+      <img style="float: right; width: 50px;margin-top: -50px;position: relative;"     
+           onclick="startDictation()" src="../CodeGen/img/microphone.gif" />
+     
+     <!-- <span class="input-group-btn"> <a href="#be-the-first" class="btn btn-primary btn-lg "
+            onclick='getresult()' id='downClick' style="background-color: #F1C40F;position: relative;float: right;">Get Result</a></span>-->
+ </div>
+ <div class="col-md-5 col-md-offset-1" style="padding-right: 280px;float: right;margin-top: -60px;">
+<a href="#be-the-first" class="btn btn-primary btn-lg "
+            onclick='getresult()' id='downClick' style="background-color: #F1C40F;position: relative;float: right;">Get Result</a>
+</div>
+
+</div>   <!--jumbotron containing query and code-->
+</div>
+</div>
+
+           </div>      <!--runcloud-app closing div-->
+
+<div class="jumbotron col-12" id="howto" >
+    <div class="row">
+      
+         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="margin-top: 100px;">
+               
+                   <h1 class=" wow fadeInDown text-center" data-wow-delay="0.5s" style="margin-bottom: 30px;color: #2C3E50;">Sample Query</h1>
+                          
+                   <div class="col-sm-8 col-sm-offset-2" style="padding-left: 50px;">
+                            
+                            <div id="queryid" class="form-group speech col-centered" style="position: relative;">                                    <!--speech class for VR-->
+                       <!-- <input id="query" style="position: relative;" type="text" name="name" class="form-control"  placeholder="Enter query" style="width:90%;" />-->
+                       <textarea id="sample" class="form-control" rows="10" id="query" readonly>
+                         &#13;&#10;
+                         Take the values 1,3,5,7 and 9.                      (Enter Operands in first line)       &#13;&#10;
+                         Add 5 to each value.                                     (Enter as many Operation 1)&#13;&#10;
+                         Sort the new numbers obtained              (Enter as many Operation 2 and so on)&#13;&#10;
+                         Find the greatest of these numbers.       (Enter final Operation to get Result)
+                       </textarea>
+                           </div><br />
+                 </div>
+                    
+                 <div class="col-xs-12 wow fadeInUp text-center" data-wow-delay="0.5s">
+                    <a href="#be-the-first" class="btn btn-primary btn-lg scroll" onclick='getresult()' id='downClick' style="background-color:#1F618D;">Get Result</a>
+                 </div>    
+        </div>
+</div></div>
+
+
+<div class="col-xs-12" id="about">  
+<div class="jumbotron text-center" style="background-color: #7FB3D5;color: white;font-family: helvetica;padding-top: 100px;height: 300px;">
+<p class="text-center" style="font-size: 50px;font-weight: 500px;font-weight: 500;color: white;">About
+</p><br><p style="font-size: 30px;color: white;"> Code Engine</p>
+</div>
+        
+         <div class="page-section-wrapper"  
+              style="display: block;background-color: #D4E6F1;margin-top: -30px;">
+
+            <div class="page-section page-section-with-arrow js-handle-pageSection js-id-13281" >
+              <div class="container">
+              <div class="row">
+           
+              <div class="col-12 col-lg-6 offset-lg-1 text-left">
+                <div class="page-section-headline">
+                  <h2 class="page-section-title"
+                   style="
+                            display: block;
+                            font-size: 2.25em;
+                            line-height: 1.3;
+                            padding-bottom: 25px;">
+                            <p style="font-size: 30px; color: #2C3E50;paddding-right: 25px;">The cool way to learn coding</p></h2></div>
+                  <div class="page-section-body" style="padding-right: 25px;margin-right:25px;color: white;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              <div class="col-12 col-lg-6 align-self-center">
+                   <img  class="img-responsive" src="img/about1.jpg"  class="pull-right" alt="image"
+                         style="height: 300px; width:450px;margin-left: 120px;">
+              </div>
+
+                
+              </div>
+            </div>
+          </div>
+      </div>
+         <!--SECOND-->
+         <div class="page-section-wrapper"  
+              style="display: block;background-color: #EBF5FB;">
+
+            <div class="page-section page-section-with-arrow js-handle-pageSection js-id-13281" >
+              <div class="container">
+              <div class="row">
+            <div class="col-12 col-lg-6 align-self-center">
+              <img  class="img-responsive" src="img/about3.jpg"  class="pull-left" alt="image"
+                    style="height: 300px; width:450px;margin-right: 30px;">
+            </div>
+
+              <div class="col-12 col-lg-6 offset-lg-1 text-left">
+                <div class="page-section-headline">
+                  <h2 class="page-section-title"
+                   style="
+                            display: block;
+                            font-size: 2.25em;
+                            line-height: 1.3;
+                            padding-bottom: 25px;">
+                            <p style="font-size: 30px; color: #2C3E50;paddding-left: 25px;">The cool way to learn coding</p></h2></div>
+                  <div class="page-section-body" style="padding-right: 25px;color: white;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+      </div>
+    
+     <!--THIRD-->
+
+ <div class="page-section-wrapper"  
+              style="display: block;background-color: #D4E6F1;">
+
+            <div class="page-section page-section-with-arrow js-handle-pageSection js-id-13281" >
+              <div class="container">
+              <div class="row">
+           
+              <div class="col-12 col-lg-6 offset-lg-1 text-left">
+                <div class="page-section-headline">
+                  <h2 class="page-section-title"
+                   style="
+                            display: block;
+                            font-size: 2.25em;
+                            line-height: 1.3;
+                            padding-bottom: 25px;">
+                            <p style="font-size: 30px; color: #2C3E50;paddding-right: 25px;">The cool way to learn coding</p></h2></div>
+                  <div class="page-section-body" style="padding-right: 25px;margin-right:25px;color: white;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  </div>
+                </div>
+              <div class="col-12 col-lg-6 align-self-center">
+                   <img  class="img-responsive" src="img/about2.jpg"  class="pull-right" alt="image"
+                         style="height: 300px; width:450px;margin-left: 120px;">
+              </div>
+
+                
+              </div>
+            </div>
+          </div>
+      </div>
+
+
+
+    </div>
+      
+
+        
+
+
+<!--<header class="jumbotron js-handle-banner js-id-13275"
+        style=""><div class="container"><div class="row ">
+<div class="overlay"></div></div><div class="jumbotron-overlay"></div></header><main id="content" role="main">
+<div class="page-section-wrapper"><div class="page-section page-section-with-arrow js-handle-pageSection js-id-13277 background-ultra-light-gray darker"
+      style=""><div class="container"><div class="row"><div class="col-12 col-lg-5  align-self-center"><img src="https://moz.imgix.net/about/Our-Story/young-rand.jpg?auto=format&amp;ch=Width&amp;fit=max&amp;ixlib=php-1.1.0&amp;q=50&amp;w=1200&amp;s=039c8eb8981dd184a0ae0ba8eddfc081"
+             alt=""
+             class="hidden-md-down"></div><div class="col-12 col-lg-6 offset-lg-1 text-left"><div class="page-section-headline"><h2 class="page-section-title"><p>Our founding</p></h2></div><div class="page-section-body"><p>Moz was founded by Rand Fishkin and Gillian Muessig in 2004. It was called SEOmoz, and started as a blog and an online community where some of the world's first SEO experts shared their research and ideas. We launched the Beginner's Guide to SEO and our first Search Ranking Factors study, and that hub of industry expertise transformed into a small consulting firm and led us to create some of our first SEO tools.</p></div></div></div></div></div></div></main></div></header>    -->
+
+
+
+     
+        <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.1.1/dist/jquery.min.js"></script>
+        <script src="https://cf1.cdn.runcloud.io/js/manifest.js?id=6efcab249d801b22326c"></script>
+        <script src="https://cf1.cdn.runcloud.io/js/vendor.js?id=ec0dbca27b7dccac251e"></script>
+        <script src="https://cf1.cdn.runcloud.io/js/app.js?id=58483124e56e75cd903e"></script>
+     <!-- scripts of mainpage-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modernizr-2.7.1.js"></script>
+
+
+  
+    <script src="js/nlpjs.js"></script>                   <!--1st scripts-->
+    <script src="js/nlpnew.js"></script>
+    <script src="js/copyquery.js"></script>
+     	 
+       <script type="text/javascript">                                     /*NOT working by importing....make it!!!!!!*/
+         function startDictation() {
+
+      if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+          var recognition = new webkitSpeechRecognition();
+
+          recognition.continuous = false;
+          recognition.interimResults = false;
+
+          recognition.lang = "en-US";
+       // recognition.lang = "hi-In";
+          recognition.start();
+
+          recognition.onresult = function(e) 
+          {
+              document.getElementById('query').value= e.results[0][0].transcript;
+              recognition.stop();
+              document.getElementById('labnol').submit();
+          }
+
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+
+      }
+      
+  }
+
+ 
+ 
+    </script>
+</body>
+</html

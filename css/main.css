@@ -1,0 +1,137 @@
+::-webkit-scrollbar {
+      width: 10px;
+    }
+::-webkit-scrollbar-track {
+      background-color:#797D7F;
+       border-radius: 16px;
+} 
+ 
+::-webkit-scrollbar-thumb {
+      background-color: #212121; 
+      border-radius: 16px;
+} 
+ 
+
+#codeoutput {
+ 
+  margin-top: 600px;
+  padding:270px 0;
+  min-height: 300px;
+  max-height: 800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#query{
+    
+    background-image: url('images/microphone.gif');
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+
+
+.btn:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+  outline: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-lg {
+  font-size: 13px;
+  line-height: 1.33;
+  padding: 22px 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+
+.btn-primary {
+  background-color:#70cbce;
+  color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: #8be2e5;
+  color: #ffffff;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+
+
+
+h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .list-inline, small {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p, .lead {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+p {
+  font-size: 17px;
+  line-height: 22px;
+  color: #929496;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #231f20;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+
+
+header
+{
+ 
+  width: 100%;
+  padding: 20px 10px 60px 10px;
+  height: 100vh;
+  overflow: hidden;
+  background-size:1000px 800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}
+
+.pad-xl {
+	padding: 200px 0px;
+}
+
+.yellow {
+	border-color: #fdc05d;
+	color: #fdc05d;
+}
+

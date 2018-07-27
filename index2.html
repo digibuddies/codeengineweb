@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first page</title>
+	 <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="turbolinks-cache-control" content="no-cache">
+        <title>First Page CodeGen</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css,npm/highlight.js@9.12.0/styles/monokai-sublime.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cf1.cdn.runcloud.io/css/app.css?id=8808b44122151e182a66">   <!--all 3 important links for firstpage-->
+
+
+<!--links for mainpage-->
+    <meta name="keywords" content="">
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!--creative.html's stylesheets-->
+  <link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+  <link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+
+  <!-- Magnific Popup -->
+  <link type="text/css" rel="stylesheet" href="css/magnific-popup.css" />
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  
+  <style type="text/css">                                        <!--internal styling for the 1stpage navigation-->
+  	
+  #mynav {
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 0px;
+
+ 
+}
+#mynav ul {
+  list-style: none;
+  text-align: right;
+}
+#mynav ul li {
+  display: inline-block;
+}
+#mynav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0px;
+}
+#mynav ul li a,
+#mynav ul li a:after,
+#mynav ul li a:before {
+  transition: all .5s;
+}
+#mynav ul li a:hover {
+  color: yellow;
+}
+
+
+/* stroke */
+#mynav.stroke ul li a
+{
+  position: relative;
+}
+#mynav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+#mynav.stroke ul li a:hover:after {
+  width: 100%;
+}
+  
+  .page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    text-align: center;
+    position: relative;
+}
+ #about{
+  padding: 0px;
+ }   
+#sample{
+  color: blue;
+}
+
+
+/*.rc-section{
+  background-color: #154360  ;
+  
+  height: 700px;
+}*/
+
+.heading{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: helvetica;
+  border-color: white;
+}
+#opbody{
+    overflow-y: scroll;
+    height:360px;
+    max-height: 360px; 
+    margin-top:-200px;
+    background-color: #EAECEE;
+    border-radius: 5px;
+    border-style: solid;
+    border-left-color:  #1B2631;
+    margin-bottom: 100px;
+    font-size: 18px;
+
+}
+#codewindow{
+   
+   overflow-y: scroll;
+   height:360px; 
+   max-height: 360px;
+    margin-top:-200px;
+    background-color: #EAECEE; 
+    border-radius: 4px;
+    border-style: solid;
+    border-right-color:   #1B2631;
+    font-size: 18px;
+    
+}
+#code{
+text-align: left;padding-top: 30px;padding-left: 20px;color: black;max-height: 360;
+}
+.card{
+   color: white;
+   height: 30px; 
+   background-color:black;
+}
+.card-body{
+  style="font-size: 20px;
+  font-weight: bold;"
+}
+
+  .wrapper { 
+ 
+  overflow:hidden;
+}
+
+.wrapper div {
+   min-height: 200px;
+   padding: 10px;
+
+}
+textarea{
+  font-weight: 500;
+  font-size: 100px;
+  color:black;
+  font-family: 'Oxygen',sans-serif;
+}
+body{
+  max-height: 800px;
+}
+.logo{
+  padding-top: 40px;
+  padding-left: 60px;
+
+}
+</style>
+
+</head>
+
+
+
+
+
+<body>
+            
+   <div id="runcloud-app">         
+  <section class="rc-section rc-hero" style="padding-top: 8px;height: 1220px;max-height: 1170px;">
+
+    <div class="rc-stars-1" v-cloak></div>
+    <div class="rc-stars-2" v-cloak></div>
+    <div class="rc-stars-3" v-cloak></div>
+  
+    
+    <div class="container">                                          
+        <div class="row" >
+          
+<div class="col-xs-12 col-md-12" style="padding-right: 0px;">
+          <nav class="stroke" id="mynav">
+			   <ul style="font-size: 18px;">
+			      <li><a href="AboutCodegen.html">ABOUT</a></li>
+			      <li><a href="CodeEngFeatures.html">FEATURES</a></li>
+			      <li><a href="contact">CONTACT</a></li>
+			    
+			   </ul>
+         </nav>
+</div>     
+        <div class=" logo col-md-12 col-xs-12 text-center"> 
+          <div class="row">
+         <img class="image-responsive" src="img/codeengine.png">
+       </div>
+       </div>
+				
+           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" style="margin-top: 30px;">
+               
+                   
+                           
+                   <div class="col-sm-8 col-sm-offset-2" style="padding-left: 50px;">
+                            
+                      <div id="queryid" class="form-group speech col-centered" style="position: relative;">                               
+                       <textarea class="form-control" rows="7" id="query" name="que" placeholder="Enter query"
+                       style=" font-weight: 500;
+                               font-size: 16px;
+                              color:black;
+                              font-family: 'Oxygen',sans-serif;" >
+    
+                       </textarea>
+                        <img style="float: right; width: 50px;margin-top: -50px;position: relative;"     onclick="startDictation()" src="../CodeGen/img/microphone.png" />
+
+
+                       <div class="col-lg-12 text-left" style="margin-top: 10px;margin-left:2px ;">
+                          <div class="col-xs-12 wow fadeInUp text-center" data-wow-delay="0.5s" >
+                            <a class="btn btn-primary btn-lg " onclick='myfun()' id='getresult' style="background-color: #F1C40F;">Get   Result</a>
+                         </div>    
+                      </div>      
+                   </div>
+           
+</div>
+                   
+
+            </div>
+
+ <div class="text-center" id="codeoutput">
+    
+
+ <div class="col-md-6 col-sm-push-6 text-center" id="opbody">
+         
+          <div class="card">
+             <div class="card-body" >OUTPUT</div>
+        </div>  
+    
+      
+      <div id="output" style="text-align: center;padding-top: 30px;color: black;">
+     
+      <!--The output will go here-->  
+      
+      </div>
+     
+     </div>
+ <div class=" col-md-6 col-sm-pull-6"  id="codewindow"> <!--display:none;-->
+       
+       <div class="card">
+             <div class="card-body" >CODE</div>
+        </div>  
+     
+        <div id="code">
+      
+        <!--The output will go here-->  
+      
+        </div>   
+      </div>
+           
+</div>   <!--jumbotron containing query and code-->
+</div>
+</div>
+</div>      <!--runcloud-app closing div-->
+
+
+
+
+
+
+
+            
+
+</section> 
+
+</div>
+
+  
+
+
+     
+        <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.1.1/dist/jquery.min.js"></script>
+        <script src="https://cf1.cdn.runcloud.io/js/manifest.js?id=6efcab249d801b22326c"></script>
+        <script src="https://cf1.cdn.runcloud.io/js/vendor.js?id=ec0dbca27b7dccac251e"></script>
+        <script src="https://cf1.cdn.runcloud.io/js/app.js?id=58483124e56e75cd903e"></script>
+         <!-- scripts of mainpage-->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
+        <script src="js/wow.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/modernizr-2.7.1.js"></script>
+
+
+  
+    <script src="js/nlpjs.js"></script>                  
+  
+    <script type="text/javascript">                                     
+         function startDictation() {                                            /*speech recog*/
+
+      if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+          var recognition = new webkitSpeechRecognition();
+
+          recognition.continuous = false;
+          recognition.interimResults = false;
+
+          recognition.lang = "en-US";
+       // recognition.lang = "hi-In";
+          recognition.start();
+
+          recognition.onresult = function(e) 
+          {
+              document.getElementById('query').value= e.results[0][0].transcript;
+              recognition.stop();
+              document.getElementById('labnol').submit();
+          }
+
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+
+      }
+      
+  }
+/*----------------------------------------------------------------*/
+$(document).ready(function() {                                       
+    $("#getresult").click(function(event){
+        $('html, body').animate({scrollTop: '+385px'}, 800);          /*scroll by 150px each time : +=395 px.*/
+    });
+});
+/*----------------------------------------------------------------*/
+function myfun()                                                     /*nlptestjs.js*/
+{
+  var q=document.getElementById('query').value;
+  document.getElementById('code').innerHTML=q;
+  $.ajax({
+      type:'POST',
+      url:'http://therapybotvm.southeastasia.cloudapp.azure.com:8080/receiver',
+      data: {que:q},
+    dataType: 'json',
+    context: document.body,
+    global: false,
+    async:true,
+    success: function(data2) {
+    data2["code"] = data2["code"].replace(/\n/g, "<br />");  
+    data2["code"] = data2["code"].replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;");  
+      document.getElementById('output').innerHTML=data2["output"];
+    document.getElementById('code').innerHTML=data2["code"];
+      },
+      error: function(request, status, error) {
+        document.getElementById('disp').innerHTML="error"+error;
+      }
+   });  
+}
+
+
+ 
+    </script>
+</body>
+</html
