@@ -91,7 +91,7 @@
   color: blue;
 }
 #codeoutput{
-  padding-top:250px;
+  padding-top:150px;
 }
 .heading{
   background-color: black;
@@ -104,12 +104,12 @@
     overflow-y: scroll;
     height:360px;
     max-height: 500px; 
-    margin-top:-200px;
+    margin-top:0px;
     background-color: #EAECEE;
     border-radius: 5px;
     border-style: solid;
     border-left-color:  #1B2631;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     font-size: 18px;
 }
 #codewindow{
@@ -119,13 +119,13 @@
     max-width: 100%;
     overflow-x: hidden;
     max-height: 500px;
-    margin-top:-200px;
+    margin-top:0px;
     background-color: #EAECEE; 
     border-radius: 4px;
     border-style: solid;
     border-right-color:   #1B2631;
     font-size: 15px;
-    margin-bottom: 200px;   
+    margin-bottom: 10px;   
     }
  .prettyprint ol.linenums li { list-style-type: decimal; }
  ol.linenums{
@@ -153,9 +153,11 @@ textarea{
   font-family: 'Oxygen',sans-serif;
 }
 body{
-  max-height: 800px;
+  max-height: 100%;
 /*background: -webkit-linear-gradient(-180deg, rgb(3, 2, 9), rgb(15, 15, 42));
 background: linear-gradient(-180deg, rgb(3, 2, 9), rgb(15, 15, 42));*/
+overflow-y: hidden;
+width: 100%;
 background-color: #17182f;
 
 }
@@ -166,9 +168,7 @@ Highlight Code
   padding-left: 60px;
 
 }
-section{
-padding-top: 8px;height: 1220px;max-height: 1170px;
-}
+
 /*---------------------------------------NEW CSS FOR BACKGROUND--*/
 
 canvas {
@@ -179,8 +179,7 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  
-  height: 100vmax !important;
+  height: 100%;
 }
 #particles canvas{
     position: absolute;
@@ -199,6 +198,15 @@ canvas {
 
 
 <body>
+  <script>
+    function toggleZoomScreen() {
+  document.body.style.zoom="100%"
+  } 
+
+  window.onpaint = toggleZoomScreen();
+
+  </script>
+  
  <div id="particles-js"></div>
   <section>
     <div class="container">                                          
@@ -207,10 +215,10 @@ canvas {
 <div class="col-xs-12 col-md-12" style="padding-right: 0px;">
           <nav class="stroke" id="mynav">
 			   <ul>
-			      <li><a href="#">HOME</a></li>
+			      <!--<li><a href="#">HOME</a></li>
 			      <li><a href="CodeEngFeatures.html">FEATURES</a></li>
 			      <li><a href="AboutCodegen.html">ABOUT</a></li>
-			    
+			    -->
 			   </ul>
          </nav>
 </div>     
@@ -345,6 +353,8 @@ $(document).ready(function() {
     });
 });
 /*----------------------------------------------------------------*/
+
+
 function myfun()                                                     /*nlptestjs.js*/
 {
   var q=document.getElementById('query').value;
@@ -480,8 +490,6 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
-
-    </script>
+</script>
 </body>
 </html>
