@@ -26,7 +26,6 @@
   width: 80%;
   margin: 0 auto;
   padding-right: 0px;
-
  
 }
 #mynav ul {
@@ -55,8 +54,6 @@
 #mynav ul li a:hover {
   color: #FF4500;
 }
-
-
 /* stroke */
 #mynav.stroke ul li a
 {
@@ -91,7 +88,7 @@
   color: blue;
 }
 #codeoutput{
-  padding-top:150px;
+  padding-top:250px;
 }
 .heading{
   background-color: black;
@@ -104,12 +101,12 @@
     overflow-y: scroll;
     height:360px;
     max-height: 500px; 
-    margin-top:0px;
+    margin-top:-200px;
     background-color: #EAECEE;
     border-radius: 5px;
     border-style: solid;
     border-left-color:  #1B2631;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     font-size: 18px;
 }
 #codewindow{
@@ -119,13 +116,13 @@
     max-width: 100%;
     overflow-x: hidden;
     max-height: 500px;
-    margin-top:0px;
+    margin-top:-200px;
     background-color: #EAECEE; 
     border-radius: 4px;
     border-style: solid;
     border-right-color:   #1B2631;
     font-size: 15px;
-    margin-bottom: 10px;   
+    margin-bottom: 200px;   
     }
  .prettyprint ol.linenums li { list-style-type: decimal; }
  ol.linenums{
@@ -144,8 +141,6 @@ text-align: left;padding-top: 30px;padding-left: 0px;color: black;max-height: 36
   font-weight: bold;
   "
 }
-
-
 textarea{
   font-weight: 500;
   font-size: 100px;
@@ -153,33 +148,29 @@ textarea{
   font-family: 'Oxygen',sans-serif;
 }
 body{
-  max-height: 100%;
+  max-height: 800px;
 /*background: -webkit-linear-gradient(-180deg, rgb(3, 2, 9), rgb(15, 15, 42));
 background: linear-gradient(-180deg, rgb(3, 2, 9), rgb(15, 15, 42));*/
-overflow-y: hidden;
-width: 100%;
 background-color: #17182f;
-
 }
-
 Highlight Code
 .logo{
   padding-top: 40px;
   padding-left: 60px;
-
 }
-
+section{
+padding-top: 8px;height: 1220px;max-height: 1170px;
+}
 /*---------------------------------------NEW CSS FOR BACKGROUND--*/
-
 canvas {
   display: block;
   vertical-align: bottom;
 }
-
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 100%;
+  
+  height: 100vmax !important;
 }
 #particles canvas{
     position: absolute;
@@ -187,8 +178,6 @@ canvas {
     height: auto;
     z-index: -1;
 }
-
-
 </style>
 
 </head>
@@ -198,15 +187,6 @@ canvas {
 
 
 <body>
-  <script>
-    function toggleZoomScreen() {
-  document.body.style.zoom="100%"
-  } 
-
-  window.onpaint = toggleZoomScreen();
-
-  </script>
-  
  <div id="particles-js"></div>
   <section>
     <div class="container">                                          
@@ -215,10 +195,10 @@ canvas {
 <div class="col-xs-12 col-md-12" style="padding-right: 0px;">
           <nav class="stroke" id="mynav">
 			   <ul>
-			      <!--<li><a href="#">HOME</a></li>
+			      <li><a href="#">HOME</a></li>
 			      <li><a href="CodeEngFeatures.html">FEATURES</a></li>
 			      <li><a href="AboutCodegen.html">ABOUT</a></li>
-			    -->
+			    
 			   </ul>
          </nav>
 </div>     
@@ -314,35 +294,26 @@ canvas {
         }
       );
       wow.init();
-
-
   
 });
 /*--------------------------------------------------------------------                                     
          function startDictation() {                                            speech recog
-
       if (window.hasOwnProperty('webkitSpeechRecognition')) {
-
           var recognition = new webkitSpeechRecognition();
-
           recognition.continuous = false;
           recognition.interimResults = false;
-
           recognition.lang = "en-US";
        // recognition.lang = "hi-In";
           recognition.start();
-
           recognition.onresult = function(e) 
           {
               document.getElementById('query').value= e.results[0][0].transcript;
               recognition.stop();
               document.getElementById('labnol').submit();
           }
-
           recognition.onerror = function(e) {
             recognition.stop();
           }
-
       }
       
   }
@@ -353,8 +324,6 @@ $(document).ready(function() {
     });
 });
 /*----------------------------------------------------------------*/
-
-
 function myfun()                                                     /*nlptestjs.js*/
 {
   var q=document.getElementById('query').value;
@@ -379,7 +348,6 @@ function myfun()                                                     /*nlptestjs
       }
    });  
 }
-
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -490,6 +458,6 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-</script>
+    </script>
 </body>
 </html>
