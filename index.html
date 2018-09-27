@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Monoton|Oxygen|Cabin" rel="stylesheet">
   <link rel="stylesheet" href="css/styleparticles.css">
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=default"></script>
   
   <style type="text/css">                                        <!--internal styling for the 1stpage navigation-->
   	
@@ -134,7 +135,7 @@
 		  color: white;
 	  }	  
  .prettyprint ol.linenums li { 
-	 list-style-type: decimal; }
+	 list-style-type: decimal !important; }
  ol.linenums{
   padding-left: 0px;
 	 color:white;
@@ -253,7 +254,7 @@ canvas {
      
         <div id="code">
                <!--The output will go here-->
-      <pre class="prettyprint linenums" id="pretty" color="white">Your code will be displayed here</pre>
+      <pre class="prettyprint lang-java linenums:5 prettyprinted" id="pretty" color="white" style>Your code will be displayed here</pre>
         </div>   
       </div>
 
@@ -262,7 +263,7 @@ canvas {
           <div class="card">
              <div class="card-body" >OUTPUT</div>
         </div>  
-            <div id="output" style="text-align: center;padding-top: 30px;color: black;">
+            <div id="output" style="text-align: center;color: black;">
      Your output will be displayed here
                <!--The output will go here-->  
       
@@ -281,7 +282,6 @@ canvas {
 <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>  
 <script src="particles.js"></script>
 <script src="particles.min.js"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=js&amp;skin=default"></script>
 
 
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
