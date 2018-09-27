@@ -349,6 +349,7 @@ function myfun()                                                     /*nlptestjs
     data2["code"] = data2["code"].replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;");  
       document.getElementById('output').innerHTML=data2["output"];
     document.getElementById('pretty').innerHTML=data2["code"];
+	    PR.prettyPrint();
       },
       error: function(request, status, error) {
         document.getElementById('disp').innerHTML="error"+error;
