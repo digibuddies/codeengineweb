@@ -351,7 +351,7 @@ function myfun()                                                     /*nlptestjs
     data2["code"] = data2["code"].replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;");  
       document.getElementById('output').innerHTML=data2["output"];
     document.getElementById('pretty').innerHTML=data2["code"];
-	    PR.prettyPrint();
+	    reload_js('https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js');
       },
       error: function(request, status, error) {
         document.getElementById('disp').innerHTML="error"+error;
@@ -468,6 +468,13 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+	    <script>
+    function reload_js(src) {
+        $('script[src="' + src + '"]').remove();
+        $('<script>').attr('src', src).appendTo('head');
+    }
+    reload_js('https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js');
+</script>
     </script>
 </body>
 </html>
